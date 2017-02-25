@@ -1,13 +1,13 @@
 /*////////////// Fonts //////////////*/
 
-/* link the web font used for the level 1 heading here */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 /*////////// Global Styles //////////*/
 
 body {
 	background: #F3EBE9;
 	font-size: 100%;
-	font-family: 'Times New Roman', serif; 
+	font-family: 'Times New Roman', serif;
 }
 
 .wrapper {
@@ -18,3 +18,66 @@ body {
 }
 
 /* Write all remaining styles here */
+
+/****************
+ * TEXT DISPLAY *
+ ***************/
+
+header {
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 5px;
+	padding-bottom: 10px;
+}
+header .logo {
+	color: rgb(152,173,166);
+	font-family: 'Playfair Display', serif;
+	font-size: 5em;
+	font-weight: normal;
+	margin: 0;
+}
+h2 {
+	color: rgb(111,127,122);
+	font-size: 2em;
+}
+p {
+	color: #555;
+	font-size: 1em;
+	margin: 0 0 20px 0;
+}
+#featured a {
+	text-decoration: none;
+}
+#featured a:hover {
+	text-decoration: underline;
+}
+.copyright {
+	float: right;
+	font-size: 0.8em;
+}
+
+/**********
+ * IMAGES *
+ *********/
+
+#featured .featured-image {
+	border: 5px solid rgb(152,173,166);
+}
+#press img {
+	border: 5px solid #ccc;
+	transition: 400ms;
+}
+#press img:hover {
+	border-color: rgb(111,127,122);
+}
+
+/*********************
+ * SECTIONS & LAYOUT *
+ ********************/
+#press {
+	margin-bottom: 20px;
+}
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+}
